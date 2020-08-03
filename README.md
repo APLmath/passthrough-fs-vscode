@@ -6,5 +6,5 @@ This extension just implements a basic `FileSystemProvider` that passes through 
 
 1. After installing the extensiono, open a file on the filesystem.
 2. Go to the editor context menu, and click "Open with Passthrough":
-![basic](src/screenshot.png)
+![basic](images/screenshot.png)
 3. A new tab opens the same file using `PassthroughFS`.
