@@ -10,16 +10,23 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:fspassthrough.helloWorld"
+		"*"
 	],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
 			{
-				"command": "fspassthrough.helloWorld",
-				"title": "Hello World"
+				"command": "fspassthrough.openWithPassthrough",
+				"title": "Open with Passthrough"
 			}
-		]
+		],
+		"menus": {
+			"editor/title": [
+				{
+					"command": "fspassthrough.openWithPassthrough"
+				}
+			]
+		}
 	},
 	"scripts": {
 		"vscode:prepublish": "npm run compile",
